@@ -11,6 +11,8 @@ while tries < 3:
 		print("That's not a positive whole number, try again!")
 	else:
 		guess = int(guess)
+		tries += 1
+			print ("Try Again")
 # converts a string to an integer
 	if guess == aRandomNumber:
 		print("Correct!")
@@ -19,4 +21,3 @@ while tries < 3:
 		print ("Too low!")
 	else:
 		print ("Too high!")
-tries +=1
