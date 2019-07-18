@@ -16,10 +16,11 @@ for tries in range(3):
 	if guess == aRandomNumber:
 		print("Correct!")
 		break
-	elif guess < aRandomNumber:
-		print ("Too low!")
-		tries +=1
 	else:
-		print ("Too high!")
+		if guess < aRandomNumber:
+			print ("Too low!")
+			tries +=1
+		else:
+			print ("Too high!")
 if tries == 3:
 	print ("Try Again!")
